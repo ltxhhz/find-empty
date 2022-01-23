@@ -1,0 +1,111 @@
+/* @import url(./bulma@0.9.3.min.css); */
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+.text-center {
+  text-align: center !important;
+}
+
+.action {
+  display: none;
+  flex: 2;
+}
+
+.td {
+  margin: 0 !important;
+}
+
+.td>button {
+  height: 1.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+.tr:hover>.action {
+  display: table-cell;
+}
+
+.tr:hover>.action-n {
+  display: none;
+}
+
+.notice-box {
+  position: fixed;
+  width: 20rem;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* 过渡 */
+.notice-enter-active,
+.notice-leave-active {
+  transition: all .7s;
+}
+
+.notice-leave-active {
+  width: 100%;
+  position: absolute;
+}
+
+.notice-item {
+  transition: all 0.7s;
+}
+
+.notice-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.notice-leave-to {
+  transform: translateX(21rem);
+}
+
+/* 过渡 */
+
+.v-leave-active {
+  position: absolute;
+  width: calc(100% - 2.5rem);
+}
+
+.v-enter {
+  opacity: 0;
+  transform: translateX(-1rem);
+}
+
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(1rem);
+}
+
+.tbody{
+  display: flex;
+  flex-direction: column;
+}
+.tr {
+  display: flex;
+  align-items: center;
+  transition: all 0.7s;
+}
+
+.th:first-of-type,
+.td:first-of-type {
+  width: 2rem;
+}
+
+.th:nth-child(2),
+.td:nth-child(2) {
+  flex: 3;
+}
+
+.th:nth-child(4),
+.td:nth-last-child(1) {
+  flex: 1.5;
+}
+
+.th:nth-child(3),
+.td:nth-last-child(2) {
+  flex: 0.5;
+}
+
+.tr>* {
+  padding: 0.5rem;
+}

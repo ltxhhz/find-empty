@@ -1,0 +1,31 @@
+{
+  "main": "index.html",
+  "preload": "preload.js",
+  "logo": "logo.png",
+  "features": [
+    {
+      "code": "main",
+      "explain": "查找指定路径的空文件夹",
+      "cmds": [
+        "查找空文件夹",
+        "空文件夹",
+        "find empty",
+        {
+          "type": "files",
+          "fileType": "directory",
+          "label": "在这个目录下查找空文件夹",
+          "minLength": 1,
+          "maxLength": 1
+        },
+        {
+          "type": "regex",
+          "label": "在这个目录下查找空文件夹",
+          "match": "/^([a-zA-Z]:)?(?!\\\\/)(?!/\\\\)[\\\\|/][\\\\|/]?((?!\\\\|/)[^?*:\"<>\\\\/\\|]+[\\\\|/]?)*$/"
+        }
+      ]
+    }
+  ],
+  "pluginSetting": {
+    "single": true
+  }
+}
